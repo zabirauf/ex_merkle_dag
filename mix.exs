@@ -28,7 +28,8 @@ defmodule MerkleDag.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:multihash, github: "zabirauf/ex_multihash"}
+      {:multihash, github: "zabirauf/ex_multihash"},
+      {:uuid, "~> 1.0"}
     ]
   end
 end
