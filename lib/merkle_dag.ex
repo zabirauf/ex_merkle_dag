@@ -1,0 +1,2 @@
+defmodule MerkleDag do
+end

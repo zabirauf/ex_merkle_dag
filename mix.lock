@@ -1,0 +1,2 @@
+%{"monad": {:hex, :monad, "1.0.4"},
+  "multihash": {:git, "git://github.com/zabirauf/ex_multihash.git", "71d79ffecdd198dd9ef96c2c7d6400bba3fce5a9", []}}
