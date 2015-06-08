@@ -166,5 +166,5 @@ defmodule MerkleDAG.DataStore.Key do
   """
   def top_level?(key), do: length(namespaces_from_key(key)) == 1
 
-  def create_random_key(), do: @namespace_separator ++ String.replace(UUID.uuid4, "-", "")
+  def create_random_key(), do: @namespace_separator <> String.replace(UUID.uuid4, "-", "")
 end
