@@ -1,3 +1,4 @@
-%{"monad": {:hex, :monad, "1.0.4"},
-  "multihash": {:git, "git://github.com/zabirauf/ex_multihash.git", "71d79ffecdd198dd9ef96c2c7d6400bba3fce5a9", []},
+%{"dialyxir": {:git, "git://github.com/jeremyjh/dialyxir.git", "e2e172184b782ee28e6fe9b69db2df5c4a39cbeb", []},
+  "monad": {:hex, :monad, "1.0.4"},
+  "multihash": {:git, "git://github.com/zabirauf/ex_multihash.git", "568ba0be0412d6d8782d6fd187ffc9d95b97436c", []},
   "uuid": {:hex, :uuid, "1.0.1"}}
