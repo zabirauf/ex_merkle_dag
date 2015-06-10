@@ -32,6 +32,8 @@ defmodule MerkleDag.Mixfile do
       {:uuid, "~> 1.0"},
       {:dialyxir, github: "jeremyjh/dialyxir"},
       {:base58check, github: "gjaldon/base58check"},
+      {:exprotobuf, "~> 0.8.5"},
+      {:gpb, github: "tomas-abrahamsson/gpb", tag: "3.17.2"},
     ]
   end
 end
