@@ -30,7 +30,8 @@ defmodule MerkleDag.Mixfile do
     [
       {:multihash, github: "zabirauf/ex_multihash"},
       {:uuid, "~> 1.0"},
-      {:dialyxir, github: "jeremyjh/dialyxir"}
+      {:dialyxir, github: "jeremyjh/dialyxir"},
+      {:base58check, github: "gjaldon/base58check"},
     ]
   end
 end

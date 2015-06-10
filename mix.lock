@@ -1,4 +1,6 @@
-%{"dialyxir": {:git, "git://github.com/jeremyjh/dialyxir.git", "e2e172184b782ee28e6fe9b69db2df5c4a39cbeb", []},
+%{"base58check": {:git, "git://github.com/gjaldon/base58check.git", "1006aa4b2acf51ddd99f71997ba6baf44fcdb7c3", []},
+  "dialyxir": {:git, "git://github.com/jeremyjh/dialyxir.git", "e2e172184b782ee28e6fe9b69db2df5c4a39cbeb", []},
+  "erlsha2": {:git, "git://github.com/vinoski/erlsha2.git", "d33e5acfac71191644e8159e03284a6a4ccf9483", []},
   "monad": {:hex, :monad, "1.0.4"},
   "multihash": {:git, "git://github.com/zabirauf/ex_multihash.git", "568ba0be0412d6d8782d6fd187ffc9d95b97436c", []},
   "uuid": {:hex, :uuid, "1.0.1"}}
