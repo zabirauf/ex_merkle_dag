@@ -1,11 +1,11 @@
 defmodule MerkleDAG.Blocks.Block do
-
+  alias MerkleDAG.Blocks.Key, as: Key
   alias MerkleDAG.Blocks.Block, as: Block
 
   @type multihash :: binary
 
-  @type t :: %Block{multihash: multihash, data: binary}
-  defstruct [:multihash, :data]
+  @type t :: %Block{data: binary, multihash: multihash}
+  defstruct data: nil, multihash: nil
 
   @default_hash_algorithm :sha2_256
 
@@ -15,6 +15,6 @@ defmodule MerkleDAG.Blocks.Block do
       data: data
     }
 
-  @spec get_key(t) :: multihash
-  def get_key(block), do: nil
+  @spec get_key(t) :: Key.t
+  def get_key(block), do: Key.key(block.multihash)
 end

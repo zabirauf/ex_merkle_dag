@@ -5,6 +5,12 @@ defmodule MerkleDAG.Blocks.Key do
   @default_prefix 128
 
   @doc """
+  Creates the key
+  """
+  @spec key(any) :: t
+  def key(key), do: "" <> key
+
+  @doc """
   Encodes the key to Base 58 binary
 
   ## Examples

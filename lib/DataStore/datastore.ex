@@ -1,6 +1,8 @@
 defprotocol MerkleDAG.DataStore do
 
-  @type datastore :: any
+  @type t :: any
+
+  @type datastore :: t
 
   @type key :: MerkleDAG.DataStore.Key.t
 

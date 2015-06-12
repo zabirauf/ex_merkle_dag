@@ -53,7 +53,7 @@ defmodule MerkleDAG.Node do
   """
   @spec get_key(Node.t) :: Key.t
   def get_key(node) do
-    multihash(node)
+    Key.key multihash(node)
   end
 
   @doc"""
