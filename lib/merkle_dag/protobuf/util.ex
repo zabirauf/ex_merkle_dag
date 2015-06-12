@@ -15,8 +15,7 @@ defmodule MerkleDAG.Protobuf.Util do
 
   @spec from_pb_node(pbnode) :: Node.t
   def from_pb_node(%MerkleDAG.Protobuf.PBNode{Data: data, Links: pb_links}) do
-    links = from_pb_link(pb_links)
-    %Node{data: data, links: links}
+    %Node{data: data, links: Enum.map(pb_links, &from_pb_link/1)}
   end
 
   @spec to_pb_link(Link.t) :: pblink

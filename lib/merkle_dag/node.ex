@@ -4,6 +4,7 @@ defmodule MerkleDAG.Node do
   alias MerkleDAG.Link, as: Link
   alias MerkleDAG.NodeState, as: NodeStat
   alias MerkleDAG.Blocks.Key, as: Key
+  alias MerkleDAG.Protobuf, as: Protobuf
   alias MerkleDAG.Protobuf.Util, as: ProtobufUtil
 
   @type t :: %Node{links: [Link.t], data: binary, encoded: binary, cached: Multihash.t}
@@ -14,7 +15,7 @@ defmodule MerkleDAG.Node do
   @spec size(Node.t) :: number
   def size(node) do
     encoded_size = encode(node).encoded |> byte_size
-    links_size = Enum.reduce(node.links, fn(link, acc) -> acc + link.size end)
+    links_size = Enum.reduce(node.links, 0, fn(link, acc) -> acc + link.size end)
 
     encoded_size + links_size
   end
@@ -55,7 +56,7 @@ defmodule MerkleDAG.Node do
   @spec remove_node_link(Node.t, String.t) :: Node.t
   def remove_node_link(node, name) do
     case Enum.filter(node.links, &(&1.name == name)) do
-      [_ | links] -> Map.put(node, :link, links)
+      [_ | links] -> Map.put(node, :links, links)
       [] -> node
     end
   end
