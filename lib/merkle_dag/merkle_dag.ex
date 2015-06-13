@@ -21,7 +21,7 @@ defmodule MerkleDAG.DAG do
     key = Block.get_key(block)
 
     case DataStore.put(datastore, key, block) do
-      {:ok, updated_datastore} -> {:ok, updated_datastore, key}
+      {:ok, updated_datastore} -> {:ok, {updated_datastore, key}}
       error = {:error, _error} -> error
     end
   end
@@ -35,7 +35,7 @@ defmodule MerkleDAG.DAG do
   def add_recursive(datastore, node) do
     Monad.Error.p do
       add(datastore, node)
-      |> (fn {datastore, _key} -> datastore end).()
+      |> (fn {datastore, _key} -> {:ok, datastore} end).()
       |> map_recursive_link(node.links, &add_recursive/2)
     end
   end
@@ -66,7 +66,6 @@ defmodule MerkleDAG.DAG do
   def remove_recursive(datastore, node) do
     Monad.Error.p do
       remove(datastore, node)
-      |> (fn {datastore, _key} -> datastore end).()
       |> map_recursive_link(node.links, &remove_recursive/2)
     end
   end
@@ -87,13 +86,13 @@ defmodule MerkleDAG.DAG do
   # TODO: See what precisely to return. What will be equivalent of NodeGetter
   @spec get_dag(DataStore.t, Node.t) :: {:ok, any} | error_ret
   def get_dag(datastore, node) do
-    nil
+    {:error, :not_implemented}
   end
 
   # TODO: See what precisely to return. What will be equivalent of NodeGetter
   @spec get_nodes(DataStore.t, [Key.t]) :: {:ok, any} | error_ret
   def get_nodes(datastore, keys) do
-    nil
+    {:error, :not_implemented}
   end
 
   @doc """
