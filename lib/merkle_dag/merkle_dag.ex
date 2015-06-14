@@ -1,4 +1,7 @@
 defmodule MerkleDAG.DAG do
+  @moduledoc """
+  Contains the functions to create a MerkleDAG from the Nodes
+  """
   alias MerkleDAG.Node, as: Node
   alias MerkleDAG.Link, as: Link
   alias MerkleDAG.Blocks.Key, as: Key

@@ -1,5 +1,7 @@
 defmodule MerkleDAG.Blocks.Key do
-
+  @moduledoc """
+  The key is the string representation of the multihash
+  """
   @type t :: String.t
 
   @default_prefix 128
