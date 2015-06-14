@@ -1,7 +1,9 @@
 
-[![Build Status](https://semaphoreci.com/api/v1/projects/a3073271-8eef-4768-86b7-f9ac2c991b1f/446793/badge.svg)](https://semaphoreci.com/zabirauf/ex_merkle_dag)      
+[![Build Status](https://semaphoreci.com/api/v1/projects/595207c7-bd7a-4f61-b652-6edd94336e15/455117/badge.svg)](https://semaphoreci.com/zabirauf/ex_merkle_dag--2)
 
 #MerkleDAG (In Development)
+
+![Merkle Dag](https://cloud.githubusercontent.com/assets/1104560/8148112/f88a3a68-1240-11e5-9216-63449f98677d.png)
 
 [Merkle DAG](https://github.com/jbenet/random-ideas/issues/20) is the data structure powering the Git and [IPFS](http://ipfs.io).
 It has the benefits of
@@ -9,9 +11,13 @@ It has the benefits of
 * Deduplication
 * Content Addressing
 
-It can be used to build variou awesome things and IPFS is a great example of it. This is an attempt to implement MerkleDAG in Elixir so that in the future other things can be built on top of it. It is using [Go-IPFS](https://github.com/ipfs/go-ipfs) implementation as reference.
+It can be used to build various awesome things and IPFS is a great example of it. This is an attempt to implement MerkleDAG in Elixir so that in the future other things can be built on top of it. It is using [Go-IPFS](https://github.com/ipfs/go-ipfs) implementation as reference.
 
-It is still in **heavy development** and now way functional yet.
+It is still in **heavy development** and in no way functional yet.
+
+#Resources
+* [Merkle DAG](https://github.com/jbenet/random-ideas/issues/20)
+* [Mathias Buus Slide for DTN 2015](http://mafintosh.github.io/slides/dtn-2015/)
 
 #License
 
