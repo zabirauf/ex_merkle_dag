@@ -1,4 +1,8 @@
 defmodule MerkleDAG.Node do
+  @moduledoc """
+  The node represntation that the user uses to store to Merkle DAG.
+  Contains the functions to work on node as well.
+  """
   alias MerkleDAG.Node, as: Node
   alias MerkleDAG.Link, as: Link
   alias MerkleDAG.NodeStat, as: NodeStat
