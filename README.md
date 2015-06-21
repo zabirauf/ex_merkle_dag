@@ -1,5 +1,7 @@
 
 [![Build Status](https://semaphoreci.com/api/v1/projects/595207c7-bd7a-4f61-b652-6edd94336e15/455117/badge.svg)](https://semaphoreci.com/zabirauf/ex_merkle_dag--2)
+[![Build Status](https://api.travis-ci.org/zabirauf/ex_merkle_dag.svg?branch=master)](https://travis-ci.org/zabirauf/ex_merkle_dag)
+[![Inline docs](http://inch-ci.org/github/zabirauf/ex_merkle_dag.svg)](http://inch-ci.org/github/zabirauf/ex_merkle_dag)
 
 #MerkleDAG (In Development)
 

@@ -3,6 +3,8 @@
   "erlsha2": {:git, "git://github.com/vinoski/erlsha2.git", "d33e5acfac71191644e8159e03284a6a4ccf9483", []},
   "exprotobuf": {:hex, :exprotobuf, "0.8.5"},
   "gpb": {:git, "git://github.com/tomas-abrahamsson/gpb.git", "cad0d21c8d1867dc7f2ce0f6792c998ffa52fa4b", [tag: "3.17.2"]},
+  "inch_ex": {:hex, :inch_ex, "0.3.2"},
   "monad": {:hex, :monad, "1.0.4"},
   "multihash": {:git, "git://github.com/zabirauf/ex_multihash.git", "568ba0be0412d6d8782d6fd187ffc9d95b97436c", []},
+  "poison": {:hex, :poison, "1.4.0"},
   "uuid": {:hex, :uuid, "1.0.1"}}

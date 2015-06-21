@@ -34,6 +34,7 @@ defmodule MerkleDag.Mixfile do
       {:base58check, github: "gjaldon/base58check"},
       {:exprotobuf, "~> 0.8.5"},
       {:gpb, github: "tomas-abrahamsson/gpb", tag: "3.17.2"},
+      {:inch_ex, only: :docs}
     ]
   end
 end
